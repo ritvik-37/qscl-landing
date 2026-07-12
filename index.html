@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="QSCL — Quantum-Safe Communication Layer by Namo Labs. The future of secure communication, quantum-safe encryption, and developer-first SDKs.">
+    <title>QSCL — Quantum-Safe Communication Layer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg class="triquetra" width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50 15C50 15 25 55 15 75C5 95 35 90 50 90C65 90 95 95 85 75C75 55 50 15 50 15Z" stroke="url(#logo-grad)" stroke-width="8" stroke-linejoin="round"/>
+                    <circle cx="50" cy="65" r="18" stroke="url(#logo-grad)" stroke-width="8"/>
+                    <defs>
+                        <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#4F46E5"/>
+                            <stop offset="100%" stop-color="#6366F1"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="logo-text">
+                    <span class="wordmark">QSCL™</span>
+                    <span class="subtext">BY NAMO LABS</span>
+                </div>
+            </div>
+            
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#products">Products <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#solutions">Solutions <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#developers">Developers <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#resources">Resources <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+                </li>
+                <li><a href="#pricing">Pricing</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="icon-btn" aria-label="Language">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                </button>
+                <a href="#get-started" class="btn btn-black pill">GET STARTED &rarr;</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section 1 - Hero -->
+    <header class="hero section">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <h1 class="hero-headline">THE FUTURE OF<br>SECURE COMMUNICATION</h1>
+            <a href="#get-started" class="btn btn-black btn-large pill">GET STARTED &rarr;</a>
+        </div>
+    </header>
+
+    <!-- Section 2 - Bento Feature Grid -->
+    <section class="bento-section section bg-light">
+        <div class="container bento-grid bento-1">
+            <!-- Card 1 -->
+            <div class="bento-card dark-navy card-encryption">
+                <h3>Quantum-Safe Encryption</h3>
+                <div class="badges">
+                    <span class="badge ml-kem">ML-KEM</span>
+                    <span class="badge aes">AES-256-GCM</span>
+                </div>
+            </div>
+            
+            <!-- Card 2 (Center Light) -->
+            <div class="bento-card light card-tagline">
+                <h3>Quantum-Safe Communication Layer</h3>
+                <p>A unified approach to post-quantum cryptography, dropping seamlessly into any infrastructure.</p>
+            </div>
+            
+            <!-- Card 3 -->
+            <div class="bento-card dark card-keys">
+                <h3>Secure Key Management</h3>
+                <div class="mini-table">
+                    <div class="table-row head"><span>Key ID</span><span>Algorithm</span><span>Status</span></div>
+                    <div class="table-row"><span>qk_09xA</span><span>ML-KEM-768</span><span class="status active">Active</span></div>
+                    <div class="table-row"><span>ak_34rB</span><span>AES-256-GCM</span><span class="status active">Active</span></div>
+                </div>
+            </div>
+            
+            <!-- Card 4 (Black Code Snippet) -->
+            <div class="bento-card black card-dev">
+                <h3>Developer First SDK & APIs</h3>
+                <div class="code-block">
+                    <div class="code-tabs">
+                        <button class="active">TypeScript</button>
+                        <button>Python</button>
+                        <button>Go</button>
+                        <button>Rust</button>
+                    </div>
+                    <pre><code>import { QSCL } from '@namo-labs/qscl';
+
+const client = new QSCL({ apiKey: 'YOUR_KEY' });
+const encrypted = await client.encrypt('Hello Quantum Future');
+console.log(encrypted.payload);</code></pre>
+                </div>
+            </div>
+            
+            <!-- Card 5 (Indigo Industry Grid) -->
+            <div class="bento-card indigo card-industries">
+                <h3>Built for Every Industry</h3>
+                <div class="icon-grid">
+                    <div class="industry"><span class="icon">🏦</span>Finance</div>
+                    <div class="industry"><span class="icon">🏥</span>Healthcare</div>
+                    <div class="industry"><span class="icon">🏛️</span>Government</div>
+                    <div class="industry"><span class="icon">☁️</span>Cloud</div>
+                    <div class="industry"><span class="icon">🔌</span>IoT</div>
+                    <div class="industry"><span class="icon">⛓️</span>Web3</div>
+                    <div class="industry"><span class="icon">📡</span>Telecom</div>
+                    <div class="industry"><span class="icon">➕</span>More</div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-xl">
+            <a href="#explore" class="btn btn-black pill">EXPLORE FEATURES &rarr;</a>
+        </div>
+    </section>
+
+    <!-- Section 3 - Secondary Hero -->
+    <section class="secondary-hero section">
+        <div class="3d-bg">
+            <!-- CSS 3D shapes placeholder -->
+            <div class="shape sphere"></div>
+            <div class="shape arch"></div>
+            <div class="shape pedestal"></div>
+        </div>
+        <div class="container text-center split-headline-container">
+            <h2 class="split-headline">
+                <span class="text-black">BUILT FOR A</span><br>
+                <span class="text-blue">
+                    <svg class="triquetra inline" width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 15C50 15 25 55 15 75C5 95 35 90 50 90C65 90 95 95 85 75C75 55 50 15 50 15Z" stroke="#4F46E5" stroke-width="8" stroke-linejoin="round"/>
+                        <circle cx="50" cy="65" r="18" stroke="#4F46E5" stroke-width="8"/>
+                    </svg>
+                    QUANTUM-SECURE
+                </span><br>
+                <span class="text-black">FUTURE</span>
+            </h2>
+        </div>
+    </section>
+
+    <!-- Section 4 - Second Bento Grid -->
+    <section class="bento-section section bg-light bento-padding">
+        <div class="container bento-grid bento-2">
+            
+            <div class="bento-card dark-purple card-comm">
+                <h3>Quantum-Safe Communication</h3>
+                <div class="carousel-dots"><span></span><span class="active"></span><span></span></div>
+                <div class="shield-icon">🛡️</div>
+                <button class="btn btn-white pill mt-auto">Secure Your Connection</button>
+            </div>
+            
+            <div class="bento-card light card-infra">
+                <h3>Developer-First Infrastructure</h3>
+                <div class="badges-row">
+                    <span class="badge icon-badge">💻 Code</span>
+                    <span class="badge icon-badge">⚙️ API</span>
+                    <span class="badge icon-badge">📦 Package</span>
+                </div>
+            </div>
+            
+            <div class="bento-card light center-card">
+                <h3 class="highlight-text">BUILT FOR A QUANTUM-SECURE FUTURE</h3>
+                <p>Defending today's data against tomorrow's threats.</p>
+            </div>
+            
+            <div class="bento-card light-lavender card-exchange">
+                <h3>Secure Data Exchange</h3>
+                <div class="layered-lock">
+                    <div class="layer l1"></div>
+                    <div class="layer l2"></div>
+                    <div class="layer l3">🔒</div>
+                </div>
+            </div>
+            
+            <div class="bento-card mint card-enterprise">
+                <h3>Enterprise-Grade Security</h3>
+                <div class="icon-row">
+                    <div class="sec-item"><span>✔️</span>Compliant</div>
+                    <div class="sec-item"><span>📊</span>Auditable</div>
+                    <div class="sec-item"><span>📈</span>Scalable</div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Section 5 - Product Showcase -->
+    <section class="product-showcase section">
+        <div class="container showcase-layout">
+            <div class="showcase-content">
+                <h2 class="giant-headline">QUANTUM<br>READY</h2>
+            </div>
+            <div class="device-container">
+                <div class="floating-chip chip-1">Quantum-Safe Encryption</div>
+                <div class="floating-chip chip-2">Secure Key Exchange</div>
+                <div class="floating-chip chip-3">End-to-End Security</div>
+                
+                <!-- dotted lines placeholder -->
+                <svg class="dotted-lines" width="100%" height="100%"><path d="..." stroke="var(--primary-blue)" stroke-width="2" stroke-dasharray="5,5" fill="none"/></svg>
+                
+                <div class="device-mockup">
+                    <div class="app-ui">
+                        <div class="status-bar">
+                            <span class="status-dot green"></span> Connected
+                        </div>
+                        <div class="ui-row">
+                            <div class="ui-icon">🔐</div>
+                            <div class="ui-text">
+                                <strong>Post-Quantum Encryption</strong>
+                                <span>Active (ML-KEM)</span>
+                            </div>
+                        </div>
+                        <div class="ui-row">
+                            <div class="ui-icon">🔑</div>
+                            <div class="ui-text">
+                                <strong>Secure Key Management</strong>
+                                <span>Auto-rotating</span>
+                            </div>
+                        </div>
+                        <div class="ui-row">
+                            <div class="ui-icon">🛡️</div>
+                            <div class="ui-text">
+                                <strong>End-to-End Protection</strong>
+                                <span>Zero-knowledge</span>
+                            </div>
+                        </div>
+                        <div class="progress-container">
+                            <span class="progress-text">Securing your communication...</span>
+                            <div class="progress-bar"><div class="fill"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6 - Trust/Social Proof Bento -->
+    <section class="social-proof section bg-light bento-padding">
+        <div class="container bento-grid bento-3">
+            <div class="bento-card light col-span-2">
+                <h3>Trusted by organizations worldwide</h3>
+                <div class="industry-icons">
+                    <span>Fintech</span>
+                    <span>Healthcare</span>
+                    <span>Government</span>
+                    <span>Enterprise</span>
+                    <span>Developers</span>
+                </div>
+            </div>
+            
+            <div class="bento-card light-lavender">
+                <h3>End-to-End Quantum-Safe Communication</h3>
+                <div class="stacked-layers">
+                    <div class="sl-layer sl-1"></div>
+                    <div class="sl-layer sl-2"></div>
+                    <div class="sl-layer sl-3"></div>
+                </div>
+                <span class="tag">No weak links.</span>
+            </div>
+            
+            <div class="bento-card dark">
+                <h3>24/7 Support & Threat Monitoring</h3>
+                <div class="chat-bubbles">
+                    <div class="bubble">System active. No threats detected.</div>
+                    <div class="bubble reply">All keys rotated successfully.</div>
+                </div>
+            </div>
+            
+            <div class="bento-card black">
+                <div class="big-shield-icon">🛡️</div>
+                <h3>Developer-First Platform</h3>
+                <span class="tag accent">Simple. Powerful. Secure.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7 - Final CTA Banner -->
+    <section class="cta-banner section">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-content">
+                    <h2>GET <span class="text-blue">STARTED</span></h2>
+                    <p>Build quantum-safe. Stay future-ready.</p>
+                    <a href="#signup" class="btn btn-white pill">GET STARTED &rarr;</a>
+                </div>
+                <div class="glowing-graphic">
+                    <div class="wave-particles"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8 - Newsletter + Footer -->
+    <footer class="footer section bg-light">
+        <div class="container footer-cards">
+            <div class="f-card">
+                <h3>Stay Updated with QSCL</h3>
+                <form class="newsletter-form">
+                    <label class="checkbox-label"><input type="checkbox" checked> Product updates</label>
+                    <label class="checkbox-label"><input type="checkbox"> Security advisories</label>
+                    <div class="input-group">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-purple">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+            <div class="f-card">
+                <div class="f-card-header">
+                    <h3>New to QSCL?</h3>
+                    <div class="shield-illustration">🛡️</div>
+                </div>
+                <p>Discover how quantum-safe encryption protects against Harvest Now, Decrypt Later attacks.</p>
+                <a href="#learn" class="btn btn-blue pill">Start Learning &rarr;</a>
+            </div>
+        </div>
+        
+        <div class="container footer-links">
+            <div class="footer-brand">
+                <div class="logo">
+                    <!-- simplified logo -->
+                    <span class="wordmark">QSCL™</span>
+                </div>
+                <p class="tagline">BY NAMO LABS</p>
+                <div class="qs-badge">Quantum-safe by design</div>
+            </div>
+            <div class="footer-nav">
+                <div class="f-column">
+                    <h4>Platform</h4>
+                    <a href="#">Encryption</a>
+                    <a href="#">Key Management</a>
+                    <a href="#">SDKs</a>
+                    <a href="#">Pricing</a>
+                </div>
+                <div class="f-column">
+                    <h4>Resources</h4>
+                    <a href="#">Documentation</a>
+                    <a href="#">API Reference</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Whitepapers</a>
+                </div>
+                <div class="f-column">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="f-column">
+                    <h4>Connect</h4>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">X</a>
+                    <a href="#">YouTube</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Namo Labs. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
