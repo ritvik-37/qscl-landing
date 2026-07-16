@@ -56,251 +56,329 @@
         </div>
     </nav>
 
-    <!-- Section 1 - Hero -->
-    <header class="hero section">
-        <div class="hero-bg"></div>
-        <div class="container hero-content">
-            <h1 class="hero-headline">THE FUTURE OF<br>SECURE COMMUNICATION</h1>
-            <a href="#get-started" class="btn btn-black btn-large pill">GET STARTED &rarr;</a>
-        </div>
-    </header>
+    <!-- Unified Scroll-Driven Main Showcase Container -->
+    <section class="product-showcase" id="showcase-scroll-track">
+        <div class="sticky-showcase-viewport">
+            <div class="showcase-bg-layer" id="showcase-bg"></div>
 
-    <!-- Section 2 - Bento Feature Grid -->
-    <section class="bento-section section bg-light">
-        <div class="container bento-grid bento-1">
-            <!-- Card 1 -->
-            <div class="bento-card dark-navy card-encryption">
-                <h3>Quantum-Safe Encryption</h3>
-                <div class="badges">
-                    <span class="badge ml-kem">ML-KEM</span>
-                    <span class="badge aes">AES-256-GCM</span>
-                </div>
+            <!-- CSS 3D floating background elements for senior architectural aesthetic depth -->
+            <div class="background-3d-elements">
+                <div class="shape sphere"></div>
+                <div class="shape arch"></div>
+                <div class="shape pedestal"></div>
             </div>
             
-            <!-- Card 2 (Center Light) -->
-            <div class="bento-card light card-tagline">
-                <h3>Quantum-Safe Communication Layer</h3>
-                <p>A unified approach to post-quantum cryptography, dropping seamlessly into any infrastructure.</p>
-            </div>
-            
-            <!-- Card 3 -->
-            <div class="bento-card dark card-keys">
-                <h3>Secure Key Management</h3>
-                <div class="mini-table">
-                    <div class="table-row head"><span>Key ID</span><span>Algorithm</span><span>Status</span></div>
-                    <div class="table-row"><span>qk_09xA</span><span>ML-KEM-768</span><span class="status active">Active</span></div>
-                    <div class="table-row"><span>ak_34rB</span><span>AES-256-GCM</span><span class="status active">Active</span></div>
-                </div>
-            </div>
-            
-            <!-- Card 4 (Black Code Snippet) -->
-            <div class="bento-card black card-dev">
-                <h3>Developer First SDK & APIs</h3>
-                <div class="code-block">
-                    <div class="code-tabs">
-                        <button class="active">TypeScript</button>
-                        <button>Python</button>
-                        <button>Go</button>
-                        <button>Rust</button>
+            <div class="container showcase-grid-container">
+                <!-- Left Title Column -->
+                <div class="scroll-headlines-wrapper">
+                    <!-- Slide 0: Hero -->
+                    <div class="headline-slide active" data-slide="0">
+                        <h1 class="hero-headline">THE FUTURE OF<br>SECURE<br>COMMUNICATION</h1>
+                        <a href="#footer-cards" class="btn btn-white pill hero-cta-btn">GET STARTED &rarr;</a>
                     </div>
-                    <pre><code>import { QSCL } from '@namo-labs/qscl';
-
-const client = new QSCL({ apiKey: 'YOUR_KEY' });
-const encrypted = await client.encrypt('Hello Quantum Future');
-console.log(encrypted.payload);</code></pre>
-                </div>
-            </div>
-            
-            <!-- Card 5 (Indigo Industry Grid) -->
-            <div class="bento-card indigo card-industries">
-                <h3>Built for Every Industry</h3>
-                <div class="icon-grid">
-                    <div class="industry"><span class="icon">🏦</span>Finance</div>
-                    <div class="industry"><span class="icon">🏥</span>Healthcare</div>
-                    <div class="industry"><span class="icon">🏛️</span>Government</div>
-                    <div class="industry"><span class="icon">☁️</span>Cloud</div>
-                    <div class="industry"><span class="icon">🔌</span>IoT</div>
-                    <div class="industry"><span class="icon">⛓️</span>Web3</div>
-                    <div class="industry"><span class="icon">📡</span>Telecom</div>
-                    <div class="industry"><span class="icon">➕</span>More</div>
-                </div>
-            </div>
-        </div>
-        <div class="text-center mt-xl">
-            <a href="#explore" class="btn btn-black pill">EXPLORE FEATURES &rarr;</a>
-        </div>
-    </section>
-
-    <!-- Section 3 - Secondary Hero -->
-    <section class="secondary-hero section">
-        <div class="3d-bg">
-            <!-- CSS 3D shapes placeholder -->
-            <div class="shape sphere"></div>
-            <div class="shape arch"></div>
-            <div class="shape pedestal"></div>
-        </div>
-        <div class="container text-center split-headline-container">
-            <h2 class="split-headline">
-                <span class="text-black">BUILT FOR A</span><br>
-                <span class="text-blue">
-                    <svg class="triquetra inline" width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M50 15C50 15 25 55 15 75C5 95 35 90 50 90C65 90 95 95 85 75C75 55 50 15 50 15Z" stroke="#4F46E5" stroke-width="8" stroke-linejoin="round"/>
-                        <circle cx="50" cy="65" r="18" stroke="#4F46E5" stroke-width="8"/>
-                    </svg>
-                    QUANTUM-SECURE
-                </span><br>
-                <span class="text-black">FUTURE</span>
-            </h2>
-        </div>
-    </section>
-
-    <!-- Section 4 - Second Bento Grid -->
-    <section class="bento-section section bg-light bento-padding">
-        <div class="container bento-grid bento-2">
-            
-            <div class="bento-card dark-purple card-comm">
-                <h3>Quantum-Safe Communication</h3>
-                <div class="carousel-dots"><span></span><span class="active"></span><span></span></div>
-                <div class="shield-icon">🛡️</div>
-                <button class="btn btn-white pill mt-auto">Secure Your Connection</button>
-            </div>
-            
-            <div class="bento-card light card-infra">
-                <h3>Developer-First Infrastructure</h3>
-                <div class="badges-row">
-                    <span class="badge icon-badge">💻 Code</span>
-                    <span class="badge icon-badge">⚙️ API</span>
-                    <span class="badge icon-badge">📦 Package</span>
-                </div>
-            </div>
-            
-            <div class="bento-card light center-card">
-                <h3 class="highlight-text">BUILT FOR A QUANTUM-SECURE FUTURE</h3>
-                <p>Defending today's data against tomorrow's threats.</p>
-            </div>
-            
-            <div class="bento-card light-lavender card-exchange">
-                <h3>Secure Data Exchange</h3>
-                <div class="layered-lock">
-                    <div class="layer l1"></div>
-                    <div class="layer l2"></div>
-                    <div class="layer l3">🔒</div>
-                </div>
-            </div>
-            
-            <div class="bento-card mint card-enterprise">
-                <h3>Enterprise-Grade Security</h3>
-                <div class="icon-row">
-                    <div class="sec-item"><span>✔️</span>Compliant</div>
-                    <div class="sec-item"><span>📊</span>Auditable</div>
-                    <div class="sec-item"><span>📈</span>Scalable</div>
-                </div>
-            </div>
-            
-        </div>
-    </section>
-
-    <!-- Section 5 - Product Showcase -->
-    <section class="product-showcase section">
-        <div class="container showcase-layout">
-            <div class="showcase-content">
-                <h2 class="giant-headline">QUANTUM<br>READY</h2>
-            </div>
-            <div class="device-container">
-                <div class="floating-chip chip-1">Quantum-Safe Encryption</div>
-                <div class="floating-chip chip-2">Secure Key Exchange</div>
-                <div class="floating-chip chip-3">End-to-End Security</div>
-                
-                <!-- dotted lines placeholder -->
-                <svg class="dotted-lines" width="100%" height="100%"><path d="..." stroke="var(--primary-blue)" stroke-width="2" stroke-dasharray="5,5" fill="none"/></svg>
-                
-                <div class="device-mockup">
-                    <div class="app-ui">
-                        <div class="status-bar">
-                            <span class="status-dot green"></span> Connected
-                        </div>
-                        <div class="ui-row">
-                            <div class="ui-icon">🔐</div>
-                            <div class="ui-text">
-                                <strong>Post-Quantum Encryption</strong>
-                                <span>Active (ML-KEM)</span>
-                            </div>
-                        </div>
-                        <div class="ui-row">
-                            <div class="ui-icon">🔑</div>
-                            <div class="ui-text">
-                                <strong>Secure Key Management</strong>
-                                <span>Auto-rotating</span>
-                            </div>
-                        </div>
-                        <div class="ui-row">
-                            <div class="ui-icon">🛡️</div>
-                            <div class="ui-text">
-                                <strong>End-to-End Protection</strong>
-                                <span>Zero-knowledge</span>
-                            </div>
-                        </div>
-                        <div class="progress-container">
-                            <span class="progress-text">Securing your communication...</span>
-                            <div class="progress-bar"><div class="fill"></div></div>
-                        </div>
+                    <!-- Slide 1: Quantum Safe Encryption -->
+                    <div class="headline-slide" data-slide="1">
+                        <h2 class="giant-headline text-indigo">QUANTUM SAFE<br>ENCRYPTION</h2>
+                    </div>
+                    <!-- Slide 2: Quantum Safe Layer Communication -->
+                    <div class="headline-slide" data-slide="2">
+                        <h2 class="giant-headline text-violet">QUANTUM SAFE<br>LAYER<br>COMMUNICATION</h2>
+                    </div>
+                    <!-- Slide 3: Secure Key Management -->
+                    <div class="headline-slide" data-slide="3">
+                        <h2 class="giant-headline text-teal">SECURE KEY<br>MANAGEMENT</h2>
+                    </div>
+                    <!-- Slide 4: Developer First SDK & APIs -->
+                    <div class="headline-slide" data-slide="4">
+                        <h2 class="giant-headline text-white">DEVELOPER FIRST<br>SDK & APIs</h2>
+                    </div>
+                    <!-- Slide 5: Built for Every Industry -->
+                    <div class="headline-slide" data-slide="5">
+                        <h2 class="giant-headline text-indigo">BUILT FOR<br>EVERY INDUSTRY</h2>
+                    </div>
+                    <!-- Slide 6: 24/7 Support & Threat Monitoring -->
+                    <div class="headline-slide" data-slide="6">
+                        <h2 class="giant-headline text-teal">24/7 SUPPORT &<br>THREAT MONITORING</h2>
+                    </div>
+                    <!-- Slide 7: Secure Your Future -->
+                    <div class="headline-slide" data-slide="7">
+                        <h2 class="giant-headline text-white">SECURE<br>YOUR FUTURE</h2>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Section 6 - Trust/Social Proof Bento -->
-    <section class="social-proof section bg-light bento-padding">
-        <div class="container bento-grid bento-3">
-            <div class="bento-card light col-span-2">
-                <h3>Trusted by organizations worldwide</h3>
-                <div class="industry-icons">
-                    <span>Fintech</span>
-                    <span>Healthcare</span>
-                    <span>Government</span>
-                    <span>Enterprise</span>
-                    <span>Developers</span>
-                </div>
-            </div>
-            
-            <div class="bento-card light-lavender">
-                <h3>End-to-End Quantum-Safe Communication</h3>
-                <div class="stacked-layers">
-                    <div class="sl-layer sl-1"></div>
-                    <div class="sl-layer sl-2"></div>
-                    <div class="sl-layer sl-3"></div>
-                </div>
-                <span class="tag">No weak links.</span>
-            </div>
-            
-            <div class="bento-card dark">
-                <h3>24/7 Support & Threat Monitoring</h3>
-                <div class="chat-bubbles">
-                    <div class="bubble">System active. No threats detected.</div>
-                    <div class="bubble reply">All keys rotated successfully.</div>
-                </div>
-            </div>
-            
-            <div class="bento-card black">
-                <div class="big-shield-icon">🛡️</div>
-                <h3>Developer-First Platform</h3>
-                <span class="tag accent">Simple. Powerful. Secure.</span>
-            </div>
-        </div>
-    </section>
+                <!-- Sticky Center Phone -->
+                <div class="device-container-sticky">
+                    <div class="device-mockup-sticky">
+                        <div class="app-ui">
+                            <!-- Screen 0: Hero Welcome Boot Sequence -->
+                            <div class="app-screen active" data-screen="0">
+                                <div class="status-bar">
+                                    <span class="status-dot yellow"></span> Initializing QSCL...
+                                </div>
+                                <div class="screen-illustration">
+                                    <div class="pulse-ring"></div>
+                                    <svg class="triquetra inline-icon" width="64" height="64" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M50 15C50 15 25 55 15 75C5 95 35 90 50 90C65 90 95 95 85 75C75 55 50 15 50 15Z" stroke="#818CF8" stroke-width="8" stroke-linejoin="round"/>
+                                        <circle cx="50" cy="65" r="18" stroke="#818CF8" stroke-width="8"/>
+                                    </svg>
+                                </div>
+                                <div class="ui-row">
+                                    <div class="ui-icon">🛡️</div>
+                                    <div class="ui-text">
+                                        <strong>Secure Layer Status</strong>
+                                        <span>Booting quantum-safe core</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Screen 1: Quantum Safe Encryption -->
+                            <div class="app-screen" data-screen="1">
+                                <div class="status-bar">
+                                    <span class="status-dot green"></span> Encryptor Online
+                                </div>
+                                <div class="screen-illustration">
+                                    <div class="pulse-ring" style="border-style: solid; border-color: #818CF8;"></div>
+                                    <div class="secure-badge-icon">🔐</div>
+                                </div>
+                                <div class="ui-row">
+                                    <div class="ui-icon">🛡️</div>
+                                    <div class="ui-text">
+                                        <strong>Lattice Cryptography</strong>
+                                        <span>ML-KEM Active</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Screen 2: Quantum Safe Layer Communication -->
+                            <div class="app-screen" data-screen="2">
+                                <div class="status-bar">
+                                    <span class="status-dot green"></span> Tunnel Connected
+                                </div>
+                                <div class="network-nodes" style="background: rgba(129, 140, 248, 0.05);">
+                                    <div class="node n1" style="top: 30%; left: 20%;"></div>
+                                    <div class="node n2" style="top: 70%; left: 80%;"></div>
+                                    <svg width="100%" height="100%" style="position: absolute; stroke: rgba(129,140,248,0.3); stroke-width: 2; stroke-dasharray: 4,4;">
+                                        <line x1="20%" y1="30%" x2="80%" y2="70%" />
+                                    </svg>
+                                </div>
+                                <div class="ui-row">
+                                    <div class="ui-icon">📡</div>
+                                    <div class="ui-text">
+                                        <strong>Link Security</strong>
+                                        <span>Zero-Knowledge Handshake</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Screen 3: Secure Key Management -->
+                            <div class="app-screen" data-screen="3">
+                                <div class="status-bar">
+                                    <span class="status-dot green"></span> Key Exchange Active
+                                </div>
+                                <div class="screen-key-grid">
+                                    <div class="key-item rotating">
+                                        <span>qk_09xA</span>
+                                        <span class="status active">ML-KEM</span>
+                                    </div>
+                                    <div class="key-item">
+                                        <span>qk_77zB</span>
+                                        <span class="status active">AES-256</span>
+                                    </div>
+                                    <div class="key-item">
+                                        <span>ak_34rB</span>
+                                        <span class="status active">Rotated</span>
+                                    </div>
+                                </div>
+                                <div class="ui-row">
+                                    <div class="ui-icon">🔑</div>
+                                    <div class="ui-text">
+                                        <strong>Ephemeral Rotation</strong>
+                                        <span>Key rotation active</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Screen 4: Developer First SDK & APIs -->
+                            <div class="app-screen" data-screen="4">
+                                <div class="status-bar">
+                                    <span class="status-dot green"></span> SDK Loaded
+                                </div>
+                                <div class="mini-code-console">
+                                    <div class="mini-tabs">
+                                        <button class="active">TS</button>
+                                        <button>Py</button>
+                                        <button>Go</button>
+                                        <button>Rs</button>
+                                    </div>
+                                    <pre class="code-pre-mini"><code>import { QSCL } from '@namo-labs/qscl';
+const client = new QSCL();
+const enc = await client.encrypt('data');</code></pre>
+                                </div>
+                                <div class="ui-row">
+                                    <div class="ui-icon">💻</div>
+                                    <div class="ui-text">
+                                        <strong>SDK Status</strong>
+                                        <span>Ready to initialize</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Screen 5: Built for Every Industry -->
+                            <div class="app-screen" data-screen="5">
+                                <div class="status-bar">
+                                    <span class="status-dot green"></span> Industries Secure
+                                </div>
+                                <div class="screen-key-grid" style="justify-content: center; gap: 0.8rem;">
+                                    <div class="key-item"><span>🏦 Finance</span><span class="status active">Secure</span></div>
+                                    <div class="key-item"><span>🏥 Healthcare</span><span class="status active">Secure</span></div>
+                                    <div class="key-item"><span>🏛️ Government</span><span class="status active">Secure</span></div>
+                                </div>
+                                <div class="ui-row">
+                                    <div class="ui-icon">🔌</div>
+                                    <div class="ui-text">
+                                        <strong>Adaptability Layer</strong>
+                                        <span>Grid compliance ready</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Screen 6: 24/7 Support & Threat Monitoring -->
+                            <div class="app-screen" data-screen="6">
+                                <div class="status-bar">
+                                    <span class="status-dot green"></span> Threat Defense Active
+                                </div>
+                                <div class="network-nodes">
+                                    <div class="node n1"></div>
+                                    <div class="node n2"></div>
+                                    <div class="node n3"></div>
+                                    <div class="network-radar"></div>
+                                </div>
+                                <div class="ui-row">
+                                    <div class="ui-icon">🛡️</div>
+                                    <div class="ui-text">
+                                        <strong>Intrusion Shield</strong>
+                                        <span>Blocks MITM attempts</span>
+                                    </div>
+                                </div>
+                            </div>
 
-    <!-- Section 7 - Final CTA Banner -->
-    <section class="cta-banner section">
-        <div class="container">
-            <div class="cta-card">
-                <div class="cta-content">
-                    <h2>GET <span class="text-blue">STARTED</span></h2>
-                    <p>Build quantum-safe. Stay future-ready.</p>
-                    <a href="#signup" class="btn btn-white pill">GET STARTED &rarr;</a>
+                            <!-- Screen 7: Secure Your Future (CTA) -->
+                            <div class="app-screen" data-screen="7">
+                                <div class="status-bar">
+                                    <span class="status-dot green"></span> Ready
+                                </div>
+                                <div class="screen-start-btn">
+                                    <a href="#footer-cards" class="btn btn-purple pill">Initialize Tunnel</a>
+                                </div>
+                                <div class="ui-row">
+                                    <div class="ui-icon">⛓️</div>
+                                    <div class="ui-text">
+                                        <strong>Secure Port Active</strong>
+                                        <span>Port 443 bound</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="glowing-graphic">
-                    <div class="wave-particles"></div>
+
+                <!-- Floating Cards Overlay -->
+                <div class="showcase-cards-container">
+                    <!-- Slide 0 Cards -->
+                    <div class="showcase-card-group active" data-card-group="0">
+                        <div class="card-float right-card">
+                            <h4>QSCL™ Layer</h4>
+                            <p>Defending today's communication networks against tomorrow's quantum computing threat.</p>
+                        </div>
+                        <div class="card-float left-card">
+                            <h4>Namo Labs</h4>
+                            <p>A modern, developer-first security SDK built for quantum-secure integrations.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 1 Cards -->
+                    <div class="showcase-card-group" data-card-group="1">
+                        <div class="card-float left-card">
+                            <h4>NIST ML-KEM Standard</h4>
+                            <p>Military-grade, quantum-resistant lattice-based encryption algorithms.</p>
+                        </div>
+                        <div class="card-float right-card">
+                            <h4>AES-256-GCM</h4>
+                            <p>Dual-layered symmetric backup encryption standard.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 Cards -->
+                    <div class="showcase-card-group" data-card-group="2">
+                        <div class="card-float left-card">
+                            <h4>Zero-Knowledge</h4>
+                            <p>All communication channels are encrypted before leaving your endpoint.</p>
+                        </div>
+                        <div class="card-float right-card">
+                            <h4>Latency Optimized</h4>
+                            <p>Sub-millisecond cryptographic packet headers for maximum speed.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 Cards -->
+                    <div class="showcase-card-group" data-card-group="3">
+                        <div class="card-float left-card">
+                            <h4>Session Ephemerals</h4>
+                            <p>Rotates cryptographic key exchanges on every connection instantly.</p>
+                        </div>
+                        <div class="card-float right-card">
+                            <h4>Forward Secrecy</h4>
+                            <p>Compromising one session key leaves past data secure.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 Cards -->
+                    <div class="showcase-card-group" data-card-group="4">
+                        <div class="card-float left-card">
+                            <h4>1-Line Integrations</h4>
+                            <p>Secure web sockets, API routes, or data transfers with single method wrappers.</p>
+                        </div>
+                        <div class="card-float right-card">
+                            <h4>Universal Stacks</h4>
+                            <p>Native SDK packages ready for Node.js, Python, Go, and Rust.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 5 Cards -->
+                    <div class="showcase-card-group" data-card-group="5">
+                        <div class="card-float left-card">
+                            <h4>Industry Adaptability</h4>
+                            <p>Seamlessly deploys across Finance, Healthcare, Gov, IoT, Web3, and Cloud infrastructure.</p>
+                        </div>
+                        <div class="card-float right-card">
+                            <h4>Compliance Focused</h4>
+                            <p>Strict cryptographic requirements met for regulated services.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 6 Cards -->
+                    <div class="showcase-card-group" data-card-group="6">
+                        <div class="card-float left-card">
+                            <h4>24/7 Threat Protection</h4>
+                            <p>Real-time audit trails, compliance logging, and active MITM interception blockers.</p>
+                        </div>
+                        <div class="card-float right-card">
+                            <h4>Zero Trust Feeds</h4>
+                            <p>Proactive intrusion monitoring safeguards all key rotation handshakes.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 7 Cards -->
+                    <div class="showcase-card-group" data-card-group="7">
+                        <div class="card-float left-card">
+                            <h4>No Infrastructure Rebuilds</h4>
+                            <p>Integrates seamlessly with classical network architectures.</p>
+                        </div>
+                        <div class="card-float right-card">
+                            <h4>Start Securing Today</h4>
+                            <p>Free developer sandbox tier supports up to 10,000 monthly active users.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
